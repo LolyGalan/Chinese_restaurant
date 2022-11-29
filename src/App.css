@@ -1,0 +1,82 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+th, td {
+  width: 25%;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 5px;
+}
+th{
+  background: green;
+  color: white;
+}
+td{
+  background: rgb(175, 241, 175);
+}
+form{
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+  color: green;
+}
+form label{
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+form button {
+  width: 60%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+
+}
+form button:hover{
+  cursor: hand;
+  color: green;
+  background-color: white;
+}
+.cuarta1{
+  width: 49%;
+  height: 49%;
+  display: inline-block;
+  margin: auto;
+  float: left;
+}
+.cuarta{
+  width: 49%;
+  height: 49%;
+  display: inline-block;
+}
+
