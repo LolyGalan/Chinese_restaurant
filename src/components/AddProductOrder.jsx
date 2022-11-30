@@ -9,7 +9,7 @@ export const AddProductOrder = (props) => {
   };
   return (
     <div>
-      <h1>Haz tú pedido</h1>
+      <h2>Haz tú pedido</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           type="text"

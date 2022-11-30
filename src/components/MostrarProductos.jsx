@@ -3,7 +3,8 @@ import productos from "../productos.json";
 export const MostrarProductos = (props) => {
   return (
     <div>
-      <h1>Nuestros Productos</h1>
+      <h2>Nuestros Productos</h2>
+
       {console.log(props.product)}
       <table>
         <thead>
@@ -31,6 +32,14 @@ export const MostrarProductos = (props) => {
           )}
         </tbody>
       </table>
+      <button
+        className="button"
+        onClick={() => {
+          props.setAñadir(true);
+        }}
+      >
+        Añadir producto
+      </button>
     </div>
   );
 };

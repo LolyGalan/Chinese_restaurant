@@ -2,7 +2,7 @@ import React from "react";
 export const MostrarPromos = (props) => {
   return (
     <div>
-      <h1>Promociones</h1>
+      <h2>Promociones</h2>
       {console.log(props.promo)}
       <div>
         {props.promo.length > 0 ? (

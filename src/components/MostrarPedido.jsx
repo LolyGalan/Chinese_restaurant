@@ -2,7 +2,7 @@ import React from "react";
 export const MostrarPedido = (props) => {
   return (
     <div>
-      <h1>Pedido</h1>
+      <h2>Pedido</h2>
       {console.log(props.pedido)}
       <table>
         <thead>
@@ -28,6 +28,14 @@ export const MostrarPedido = (props) => {
           )}
         </tbody>
       </table>
+      <button
+        className="button"
+        onClick={() => {
+          props.setPedir(true);
+        }}
+      >
+        Hacer un pedido
+      </button>
     </div>
   );
 };

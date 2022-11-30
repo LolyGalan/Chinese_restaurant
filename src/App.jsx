@@ -13,6 +13,8 @@ function App() {
   const [product, setProductos] = useState(productos);
   const [pedido, setPedido] = useState([]);
   const [promo, setPromo] = useState([]);
+  const [añadir, setAñadir] = useState(false);
+  const [pedir, setPedir] = useState(false);
   const addProduct = (producto) => {
     setProductos([...product, producto]);
   };
@@ -51,20 +53,29 @@ function App() {
 
   return (
     <div className="App">
+      <div>
+        <h1 className="header">Nǐ hǎo</h1>
+      </div>
       <div className="cuarta1">
-        <MostrarProductos product={product} />
+        <MostrarProductos product={product} setAñadir={setAñadir} />
       </div>
+      {añadir && (
+        <div className="cuarta">
+          <AddProductForm addProduct={addProduct} />
+        </div>
+      )}
+      {pedir && (
+        <div className="cuarta">
+          <AddProductOrder addProductOrder={addProductOrder} />
+          <Promos promoOrder={promoOrder} />
+          <MostrarPromos promo={promo} />
+        </div>
+      )}
+
       <div className="cuarta">
-        <AddProductForm addProduct={addProduct} />
+        <MostrarPedido pedido={pedido} setPedir={setPedir} />
       </div>
-      <div className="cuarta">
-        <AddProductOrder addProductOrder={addProductOrder} />
-      </div>
-      <div className="cuarta">
-        <MostrarPedido pedido={pedido} />
-        <Promos promoOrder={promoOrder} />
-        <MostrarPromos promo={promo} />
-      </div>
+      <div className="cuarta"></div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export const AddProductForm = (props) => {
   };
   return (
     <div>
-      <h1>Añade un nuevo producto</h1>
+      <h2>Añade un nuevo producto</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <label>Número</label>
         <input
