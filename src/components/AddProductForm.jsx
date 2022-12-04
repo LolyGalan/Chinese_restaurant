@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 export const AddProductForm = (props) => {
   const { register, errors, handleSubmit } = useForm();
   const onSubmit = (data, e) => {
-    console.log(data);
     props.addProduct(data);
     e.target.reset();
   };

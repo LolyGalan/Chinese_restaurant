@@ -64,6 +64,7 @@ form{
   margin: auto;
   background-color: lightcyan;
   color: green;
+  text-align: left;
 }
 form label{
   width: 72px;
@@ -80,20 +81,64 @@ form button {
   background-color: green;
 
 }
-form button:hover{
+button:hover{
   cursor: hand;
-  color: green;
-  background-color: white;
+  color:green;
+  font-weight: bold;
+  background-color: lightgreen;
+  border-color: green;
 }
-.button {
-  width: 60%;
+.button, .button2 {
+  width: 20%;
   padding: 8px 16px;
-  margin-top: 32px;
+  margin-top: 20px;
   border: 1px solid #000;
   border-radius: 5px;
   color: white;
  background-color: green;
+ margin-bottom: 20px;
+}
+.button2{
+ float: right
+}
+input {
+  width: 50%;
+  padding: 8px 16px;
+  margin-top: 2px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.parpadea {
+  text-transform: uppercase;
+  color: green;
+  font-weight: bold;
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 

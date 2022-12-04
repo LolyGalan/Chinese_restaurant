@@ -2,13 +2,10 @@ import React from "react";
 export const MostrarPromos = (props) => {
   return (
     <div>
-      <h2>Promociones</h2>
-      {console.log(props.promo)}
+      <h2>Promociones que puedes elegir</h2>
       <div>
         {props.promo.length > 0 ? (
-          props.promo.map((prom) => {
-            <p>{prom} </p>;
-          })
+          props.promo.map((pr) => <p className="parpadea">{pr} </p>)
         ) : (
           <p>No hay promociones</p>
         )}
